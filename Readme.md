@@ -12,14 +12,14 @@ Bu proje, kullanıcıların yüklediği görüntüleri işleyerek metin içeriğ
 1. Bu GitHub deposunu klonlayın:
 
 ```
-git clone https://github.com/poqob/ocr-web.git
-cd ocr-web
+git clone https://github.com/poqob/OCRweb.git
+cd OCRweb
 ```
 
 2. Docker imajını oluşturun:
 
 ```
-docker build -t ocr-web .
+docker build -t OCRweb .
 ```
 
 ## Çalıştırma
@@ -27,7 +27,7 @@ docker build -t ocr-web .
 Docker imajını oluşturduktan sonra, uygulamayı aşağıdaki komutla başlatabilirsiniz:
 
 ```
-docker run -p 5000:5000 ocr-web
+docker run -p 5000:5000 OCRweb
 ```
 
 Tarayıcınızda `http://localhost:5000` adresine giderek OCR uygulamasının çalıştığını görebilirsiniz. Görüntü yükleyerek metin içeriğini çıkartabilirsiniz.
