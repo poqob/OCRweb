@@ -17,11 +17,11 @@ def home():
 @app.route('/', methods=['POST'])
 def upload():
     if 'file' not in request.files:
-        return 'No file uploaded'
+        return render_template('no_file_uploaded.html')
 
     file = request.files['file']
     if file.filename == '':
-        return 'No file selected'
+        return render_template('no_file_uploaded.html')
 
     image = Image.open(file)
     text = pytesseract.image_to_string(image, lang='tur')
