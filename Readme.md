@@ -44,9 +44,14 @@ Bu komutla hem Flask uygulaması hem de gerekli bağımlılıklar otomatik olara
 
 ## Notlar
 
-- Proje ana dizinindeki `app` klasörü altında Flask uygulaması bulunmaktadır.
+- Proje ana dizinindeki `src` klasörü altında Flask uygulaması bulunmaktadır.
 - `requirements.txt` dosyasında gerekli Python kütüphaneleri ve sürümleri listelenmiştir.
 - OCR işlemleri için Tesseract OCR kütüphanesini kullanıyoruz. Docker imajı, bu kütüphaneyi içerir ve uygulama içinde doğru şekilde yapılandırılmıştır.
+- build.bat, proje yaratımını yapar.
+- destroy_all_containers.bat, çalışan-çalışmayan tüm konteynerleri durdurur ve siler.
+- run_new_container.bat, yeni konteyner yürütür.
+- start_last_container.bat, durdurulmuş son konteyneri başlatır.
+- stop_all_containers.bat, çalışan bütün konteynerleri durdurur.
 
 ## Katkı
 
