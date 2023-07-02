@@ -8,25 +8,31 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return render_template('index.html')
-
-# will save image
-# will save result
+    return render_template('index2.html')
 
 
 @app.route('/', methods=['POST'])
 def upload():
     if 'file' not in request.files:
-        return render_template('no_file_uploaded.html')
+        return "no files uploaded :("
+       # return render_template('no_file_uploaded.html')
 
     file = request.files['file']
     if file.filename == '':
-        return render_template('no_file_uploaded.html')
+        return "no files uploaded :("
+        # return render_template('no_file_uploaded.html')
 
     image = Image.open(file)
+
     text = pytesseract.image_to_string(image, lang='tur')
 
-    return render_template('result.html', result=text)
+    return text
+
+
+@app.route('/result')
+def result():
+    data = request.args.get('data')
+    return render_template('result.html', result=data)
 
 
 if __name__ == '__main__':
