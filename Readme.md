@@ -58,3 +58,8 @@ Bu komutla hem Flask uygulaması hem de gerekli bağımlılıklar otomatik olara
 Her türlü katkı ve öneriler için açığız. Lütfen bir işlem başlatmadan önce GitHub üzerinden bir konu açın.
 
 ---
+
+
+## Kullanım: Youtube 
+
+[OCR-Web App Youtube Link](https://youtu.be/HaXJhpfLJZk)
